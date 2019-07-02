@@ -1,0 +1,84 @@
+<!DOCTYPE web-app PUBLIC 
+  "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+       <servlet>
+           <servlet-name>Dispatcher</servlet-name>
+           <servlet-class>action.Dispatcher</servlet-class>
+       </servlet>
+    <servlet>
+        <servlet-name>MainPage</servlet-name>
+        <servlet-class>action.common.MainPage</servlet-class>
+    </servlet>
+       <servlet>
+           <servlet-name>CheckUser</servlet-name>
+           <servlet-class>action.common.CheckUser</servlet-class>
+       </servlet>
+        <servlet>
+            <servlet-name>LogPage</servlet-name>
+            <servlet-class>action.LogPage</servlet-class>
+        </servlet>
+    <servlet>
+        <servlet-name>DelBook</servlet-name>
+        <servlet-class>action.librarian.DelBook</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RetBook</servlet-name>
+        <servlet-class>action.reader.RetBook</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TakeBook</servlet-name>
+        <servlet-class>action.reader.TakeBook</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BookPage</servlet-name>
+        <servlet-class>action.common.BookPage</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NewBook</servlet-name>
+        <servlet-class>action.librarian.NewBook</servlet-class>
+    </servlet>
+       <servlet-mapping>
+           <servlet-name>Dispatcher</servlet-name>
+           <url-pattern>/Dispatcher</url-pattern>
+       </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RetBook</servlet-name>
+        <url-pattern>/RetBook</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TakeBook</servlet-name>
+        <url-pattern>/TakeBook</url-pattern>
+    </servlet-mapping>
+       <servlet-mapping>
+           <servlet-name>CheckUser</servlet-name>
+           <url-pattern>/CheckUser</url-pattern>
+       </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogPage</servlet-name>
+        <url-pattern>/LogPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DelBook</servlet-name>
+        <url-pattern>/DelBook</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BookPage</servlet-name>
+        <url-pattern>/BookPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NewBook</servlet-name>
+        <url-pattern>/librarian/NewBook</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MainPage</servlet-name>
+        <url-pattern>/MainPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MainPage</servlet-name>
+        <url-pattern>/librarian/MainPage</url-pattern>
+    </servlet-mapping>
+
+</web-app>
